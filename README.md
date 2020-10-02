@@ -33,23 +33,23 @@ It needs a extension:
 Declare CameraPhoto() and call showPhotoGalleryAndCamera function like this example.
 <br/>
 <br/>
-<pre><p><span class="s1"><strong>import</strong></span> UIKit</p>
-<p><span class="s1"><strong>import</strong></span> MDSoftGallery</p>
-<p><span class="s1"><strong>extension</strong></span> ViewController<span class="s2">: </span>CameraPhoto_Communicate<span class="s2"> {</span></p>
-<p><span class="Apple-converted-space">&nbsp; &nbsp; </span><span class="s1"><strong>func</strong></span> <span class="s3">getAllPhotos</span>(images: [<span class="s4">UIImage</span>]) {</p>
-<p><span class="Apple-converted-space">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="s5">print</span>(<span class="s6">"get_all_photos = </span>\(images)<span class="s6">"</span>)</p>
-<p><span class="Apple-converted-space">&nbsp; &nbsp; </span>}</p>
-<p>}</p>
-<p><span class="s1"><strong>class</strong></span> <span class="s7">ViewController</span><span class="s2">: </span>UIViewController<span class="s2"> {</span></p>
-<p><span class="s2"><span class="Apple-converted-space">&nbsp; &nbsp; </span></span><strong>override</strong> <strong>func</strong> <span class="s3">viewDidLoad</span><span class="s2">() {</span></p>
-<p><span class="Apple-converted-space">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="s1"><strong>super</strong></span>.<span class="s5">viewDidLoad</span>()</p>
-<p><span class="s2"><span class="Apple-converted-space">&nbsp; &nbsp; &nbsp; &nbsp; </span></span>// Do any additional setup after loading the view.</p>
-<p><span class="Apple-converted-space">&nbsp; &nbsp; </span>}</p>
-<p><span class="Apple-converted-space">&nbsp; &nbsp; </span><span class="s1"><strong>@IBAction</strong></span> <span class="s1"><strong>func</strong></span> <span class="s3">actOpenGallery</span>(<span class="s1"><strong>_</strong></span> sender: <span class="s1"><strong>Any</strong></span>) {</p>
-<p><span class="Apple-converted-space">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="s1"><strong>let</strong></span> camPhoto = <span class="s8">CameraPhoto</span>()</p>
-<p><span class="Apple-converted-space">&nbsp; &nbsp; &nbsp; &nbsp; </span>camPhoto.<span class="s9">showPhotoGalleryAndCamera</span>(comm: <span class="s1"><strong>self</strong></span>)</p>
-<p><span class="Apple-converted-space">&nbsp; &nbsp; </span>}</p>
-<p>}</p></pre>
+<pre><p><span class="s1"><strong>import</strong></span> UIKit
+<span class="s1"><strong>import</strong></span> MDSoftGallery</p>
+<p><span class="s1"><strong>extension</strong></span> ViewController<span class="s2">: </span>CameraPhoto_Communicate<span class="s2"> {</span>
+<span class="Apple-converted-space">&nbsp; &nbsp; </span><span class="s1"><strong>func</strong></span> <span class="s3">getAllPhotos</span>(images: [<span class="s4">UIImage</span>]) {
+<span class="Apple-converted-space">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="s5">print</span>(<span class="s6">"get_all_photos = </span>\(images)<span class="s6">"</span>)
+<span class="Apple-converted-space">&nbsp; &nbsp; </span>}
+}</p>
+<p><span class="s1"><strong>class</strong></span> <span class="s7">ViewController</span><span class="s2">: </span>UIViewController<span class="s2"> {</span>
+<span class="s2"><span class="Apple-converted-space">&nbsp; &nbsp; </span></span><strong>override</strong> <strong>func</strong> <span class="s3">viewDidLoad</span><span class="s2">() {</span>
+<span class="Apple-converted-space">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="s1"><strong>super</strong></span>.<span class="s5">viewDidLoad</span>()
+<span class="s2"><span class="Apple-converted-space">&nbsp; &nbsp; &nbsp; &nbsp; </span></span>// Do any additional setup after loading the view.
+<span class="Apple-converted-space">&nbsp; &nbsp; </span>}</p>
+<p><span class="Apple-converted-space">&nbsp; &nbsp; </span><span class="s1"><strong>@IBAction</strong></span> <span class="s1"><strong>func</strong></span> <span class="s3">actOpenGallery</span>(<span class="s1"><strong>_</strong></span> sender: <span class="s1"><strong>Any</strong></span>) {
+<span class="Apple-converted-space">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="s1"><strong>let</strong></span> camPhoto = <span class="s8">CameraPhoto</span>()
+<span class="Apple-converted-space">&nbsp; &nbsp; &nbsp; &nbsp; </span>camPhoto.<span class="s9">showPhotoGalleryAndCamera</span>(comm: <span class="s1"><strong>self</strong></span>)
+<span class="Apple-converted-space">&nbsp; &nbsp; </span>}
+}</p></pre>
 <br/>
 That's it!
 <br/>

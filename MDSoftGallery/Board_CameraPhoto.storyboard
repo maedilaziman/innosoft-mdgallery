@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Camera Photo-->
+        <scene sceneID="ORP-0B-uWt">
+            <objects>
+                <viewController storyboardIdentifier="CameraPhoto_ID" id="aKe-9M-n5q" customClass="CameraPhoto" customModule="SimpleApp4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3il-VD-7ei">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PLH-Go-SQc">
+                                <rect key="frame" x="0.0" y="44" width="414" height="735"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1vw-V3-Uv1">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="66"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i93-9k-aNl">
+                                                <rect key="frame" x="0.0" y="18" width="148" height="36"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <state key="normal" title="Album Name"/>
+                                                <connections>
+                                                    <action selector="actTapAlbum:" destination="aKe-9M-n5q" eventType="touchUpInside" id="zdu-Dh-aKR"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OS2-TO-cMV">
+                                                <rect key="frame" x="315" y="18" width="99" height="36"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <state key="normal" title="DONE"/>
+                                                <connections>
+                                                    <action selector="actDone:" destination="aKe-9M-n5q" eventType="touchUpInside" id="a6i-yg-7RZ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    </view>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MnC-7r-4y7">
+                                        <rect key="frame" x="0.0" y="74" width="414" height="653"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <viewLayoutGuide key="contentLayoutGuide" id="W4I-oe-dvS"/>
+                                        <viewLayoutGuide key="frameLayoutGuide" id="imV-WU-Y06"/>
+                                    </scrollView>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3hE-sv-dy8">
+                                        <rect key="frame" x="10" y="60" width="100" height="4"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ydy-Tg-io8">
+                                <rect key="frame" x="0.0" y="779" width="418" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" spacing="283" translatesAutoresizingMaskIntoConstraints="NO" id="mED-ph-byb">
+                                        <rect key="frame" x="-20" y="0.0" width="450" height="36"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="T8L-B8-9Td">
+                                                <rect key="frame" x="0.0" y="0.0" width="86" height="36"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ysW-he-mV5">
+                                                        <rect key="frame" x="0.0" y="0.0" width="86" height="36"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <state key="normal" title="GALLERY"/>
+                                                        <connections>
+                                                            <action selector="actGetGallery:" destination="aKe-9M-n5q" eventType="touchUpInside" id="0U0-el-uTS"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="aPc-0f-ntV">
+                                                <rect key="frame" x="369" y="0.0" width="81" height="36"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hij-fi-XRs">
+                                                        <rect key="frame" x="0.0" y="0.0" width="81" height="36"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <state key="normal" title="CAMERA"/>
+                                                        <connections>
+                                                            <action selector="actGetCamera:" destination="aKe-9M-n5q" eventType="touchUpInside" id="GMk-yy-A8H"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NLn-mE-Ima">
+                                <rect key="frame" x="0.0" y="774" width="414" height="5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="uMW-0K-1zG"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="RgQ-Sr-6Jm"/>
+                    <connections>
+                        <outlet property="bgHeader" destination="1vw-V3-Uv1" id="MAq-cZ-UB5"/>
+                        <outlet property="bodyView" destination="PLH-Go-SQc" id="HSJ-DA-kW8"/>
+                        <outlet property="borderTab" destination="NLn-mE-Ima" id="4fR-xr-DIt"/>
+                        <outlet property="btnAlbumName" destination="i93-9k-aNl" id="AYD-Bm-2Ma"/>
+                        <outlet property="btnCamera" destination="Hij-fi-XRs" id="1oY-Nt-pOq"/>
+                        <outlet property="btnDone" destination="OS2-TO-cMV" id="2Aa-7q-9uX"/>
+                        <outlet property="btnGallery" destination="ysW-he-mV5" id="zge-aQ-ngT"/>
+                        <outlet property="scrollView" destination="MnC-7r-4y7" id="FsC-Bj-z5f"/>
+                        <outlet property="stackTab1" destination="T8L-B8-9Td" id="C2a-jm-o9h"/>
+                        <outlet property="stackTab2" destination="aPc-0f-ntV" id="ZF0-Hb-ekw"/>
+                        <outlet property="stackViewTab" destination="mED-ph-byb" id="TfN-6s-dY9"/>
+                        <outlet property="viewTab" destination="Ydy-Tg-io8" id="Dbf-2r-mAi"/>
+                        <outlet property="waitDataView" destination="3hE-sv-dy8" id="EO6-L5-67z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oOh-84-bgH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1015.9420289855074" y="164.73214285714286"/>
+        </scene>
+    </scenes>
+</document>

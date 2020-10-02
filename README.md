@@ -25,7 +25,7 @@ Just the files from the <b>MDSoftGallery</b> subfolder to your project.
 <h2>Setup</h2>
 <h4>Add this into info.plist</h4>
 <p>Privacy - Photo Library Usage Description : Our application needs permission to access your photo library</p>
-<p>Privacy - Camera Usage Description        : Our application needs permission to access your camera</p>
+Privacy - Camera Usage Description        : Our application needs permission to access your camera
 <br/>
 <br/>
 It needs a extension:

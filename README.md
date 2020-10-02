@@ -24,9 +24,8 @@ Just the files from the <b>MDSoftGallery</b> subfolder to your project.
 <br/>
 <h2>Setup</h2>
 <h4>Add this into info.plist</h4>
-<p>Privacy - Photo Library Usage Description : Our application needs permission to access your photo library
-Privacy - Camera Usage Description        : Our application needs permission to access your camera</p>
-<br/>
+<p><span class="s1">Privacy - Photo Library Usage Description : Our application needs permission to access your photo library</span>
+<span class="s1">Privacy - Camera Usage Description        : Our application needs permission to access your camera</span></p>
 It needs a extension:
 <pre><p class="p3"><span class="s1"><strong>extension</strong></span> ViewController<span class="s2">: </span>CameraPhoto_Communicate<span class="s2">{</span>
 <span class="Apple-converted-space">&nbsp; &nbsp; </span><span class="s1"><strong>func</strong></span> <span class="s3">getAllPhotos</span>(images: [<span class="s4">UIImage</span>]) {
